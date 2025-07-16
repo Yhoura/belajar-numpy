@@ -22,4 +22,34 @@ print(f"{aralin} < ini adalah .linspace yaitu dari angaka berapa sampe berapa di
 #________________________________________________________________
 
 # %%
-# indexing dan slicing
+# indexing
+a = np.array([1,2,3,4,5,6])
+b = np.arange(6).reshape(2,3)
+
+print(f"{a} adalah vektor 1 dimensi\n")
+print(f"{a[2]} indexing di urutan index ke 2\n")
+print(f"{b} > matriks 2 dimensi\n")
+print(f"{b[0,2]} = hasil dari baris ke 0 dan  kolom ke 2")
+print(f"{b[1,1]} = hasil dari baris ke 1 dan  kolom ke 1")
+# %%
+#slicing
+a = np.array([10,20,30,40,50,60,70])
+
+print(a)
+print(a[0:7:2])
+print(a[1:7:2])
+print(a[::4])
+print(a[-1:])
+print(a[:-1])
+print(a[::-1])
+print("\n")
+
+b = np.arange(6).reshape(2,3)
+
+print(f"{b}\n")
+print(f"{b[0,1]}\n")
+print(f"{b[0:,1]}\n")
+print(f"{b[0:,0:2]}\n")
+
+
+# %%
