@@ -45,11 +45,61 @@ print(a[::-1])
 print("\n")
 
 b = np.arange(6).reshape(2,3)
+mask = b[:,0]>1
 
 print(f"{b}\n")
 print(f"{b[0,1]}\n")
 print(f"{b[0:,1]}\n")
 print(f"{b[0:,0:2]}\n")
+print(mask)
+print(f"{b[mask]}")
+
+# %%
+#operasi matematika
+araoperasi = np.array([[1,2,3],[4,5,6]])
+print(f"{araoperasi} \n")
+
+#ditambah
+print(araoperasi+2)
+print("\n")
+
+#dikurang
+print(araoperasi-2)
+print("\n")
+
+#dikali
+print(araoperasi*3)
+print("\n")
+
+#dibagi
+print(araoperasi/2)
+print("\n")
+
+#dipangkat
+print(araoperasi**2)
+print("\n")
+
+#sum
+print(araoperasi.sum())
+print("\n")
+
+print(araoperasi.mean())
+print("\n")
+
+print(araoperasi.max())
+print("\n")
+
+print(araoperasi.min())
+print("\n")
 
 
+# %%
+#operasai matriks
+
+a = np.array([[1,2,3],[3,2,1]])
+b = np.array([[4,5,6],[7,8,9]])
+
+print(a)
+print(b.T)
+print(np.dot(a,b.T))
 # %%
